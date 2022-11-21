@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+<style>
+    .container{
+        margin: 0%;
+        padding: 0%;
+        margin-left: 50px;
+        border: 2px;
+    }
+    .container
+    {
+        display: flex;
+        justify-content: center;
+        align-item: center;
+        flex-direction: column;
+    }
+</style>
+</head>
+<body bgcolor="khaki">
+    <div class="container">
+        <fieldset style="margin-left: 500px; margin-right: 500px;">
+        <h1>Login form</h1>
+        <form action="formlinkk.php" method="post" enctype="multipart/form-data">
+            <label for="">Name:</label>
+           
+            <input type="text" name="name" placeholder="First Name">
+            <input type="text" name="lastname" placeholder="Last Name">
+            <br><br>
+            <label for="">D.O.B</label> <input type="date" name="calender" >
+            <br><br>
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female<br><br>
+            <label >ID Proof:</label> <select name="select">
+               <option >Choose the option</option>
+               <option >Aadhar Card</option>
+               <option >License</option>
+               <option >Marksheet</option>
+               <option >Pan Card</option>
+           </select><br>
+           <label for="">Upload Proof:</label><br>
+           <input type="file" name="Document"><br><br>
+           <label>Upload Image:</label><br>
+           <input type="file" name="uploadfile"><br><br>
+           <button type="submit" value="submit">Submit</button>
+           <button type="reset" value="reset">Reset</button>
+        </form>
+    </fieldset>
+    </div>
+</body>
+</html>
